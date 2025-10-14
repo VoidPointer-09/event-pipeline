@@ -1,0 +1,64 @@
+# OS
+.DS_Store
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Go
+bin/
+cmd/**/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.out
+
+# Go modules & build cache
+vendor/
+
+# Logs
+*.log
+log/
+logs/
+
+# Docker
+*.pid
+.env
+.env.local
+.env.*.local
+docker-data/
+
+# Node (if any tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python (if any scripts)
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Coverage reports
+coverage/
+lcov.info
+
+# Temporary files
+tmp/
+temp/
+
+# MacOS metadata
+.AppleDouble
+.LSOverride
+Icon?
+
+# Docker Compose volumes
+data/
+volumes/

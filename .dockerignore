@@ -1,0 +1,14 @@
+**/.git
+**/.gitignore
+**/.DS_Store
+**/node_modules
+**/bin
+**/obj
+**/tmp
+**/vendor
+**/*.log
+**/*.swp
+**/*.swo
+**/.idea
+**/.vscode
+**/dist

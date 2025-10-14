@@ -1,0 +1,35 @@
+### Get User with Orders
+GET http://localhost:8080/users/13a6c478-eb63-4dc9-a808-ad22eb6db65a
+
+###
+# Expected: User with orders array
+
+### Get User with No Orders
+GET http://localhost:8080/users/00228ecb-fecb-4a42-9889-6a6eda64c08d
+
+###
+# Expected: User with empty orders array []
+
+### Get Non-Existent User
+GET http://localhost:8080/users/non-existent-user-id-12345
+
+###
+# Expected: {"error":"Not Found","message":"user not found"}
+
+### Get Order with Pending Payment
+GET http://localhost:8080/orders/00e8e4b5-3ef9-4dc3-b868-915ef6019c11
+
+###
+# Expected: Order with "PaymentStatus": "pending"
+
+### Get Order with Settled Payment
+GET http://localhost:8080/orders/be2b5f5f-3483-4988-b9f2-6556a3bb7e46
+
+###
+# Expected: Order with "PaymentStatus": "settled"
+
+### Get Non-Existent Order
+GET http://localhost:8080/orders/non-existent-order-id-99999
+
+###
+# Expected: {"error":"Not Found","message":"order not found"}
